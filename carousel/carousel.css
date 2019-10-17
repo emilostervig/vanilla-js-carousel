@@ -39,3 +39,28 @@
 .carousel-arrow{
     position: absolute;
 }
+
+.carousel-dots{
+    text-align: center;
+}
+.carousel-dot{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.carousel-dot button{
+    color: #000;
+    opacity: .5;
+    transition: .2s;
+}
+.carousel-dot button:hover{
+    opacity: 1;
+}
+.carousel-dot button::before{
+    content: "·"
+}
+
+
+
+.carousel-dot.carousel-active button{
+    opacity: 1;
+}
